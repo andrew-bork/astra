@@ -26,7 +26,7 @@ int main(int argc, char ** argv){
     }
 
     printf("\"servo\" program:\n");
-    printf("rotating servo at pin \"%d\"\n", pin)
+    printf("rotating servo at pin \"%d\"\n", pin);
     if(mode == 't'){
         printf("mode \"time\": setting on time to %d ms.\n", ms);
     }else if(mode == 'p'){
