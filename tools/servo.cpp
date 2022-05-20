@@ -11,11 +11,15 @@ int main(int argc, char ** argv){
     int pin = 0;
     if(argc >= 2){
         pin = atoi(argv[1]);
+    }else{
         printf("DIDNT SPECIFY PIN (0-15)\n");
+        return;
     }
     if(argc >= 3){
         mode = argv[2][0];
+    }else {
         printf("DIDNT SPECIFY MODE (t/p)\n");
+        return;
     }
     if(argc == 4){
         if(mode == 't'){
