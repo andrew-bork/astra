@@ -13,13 +13,13 @@ int main(int argc, char ** argv){
         pin = atoi(argv[1]);
     }else{
         printf("DIDNT SPECIFY PIN (0-15)\n");
-        return;
+        return -1;
     }
     if(argc >= 3){
         mode = argv[2][0];
     }else {
         printf("DIDNT SPECIFY MODE (t/p)\n");
-        return;
+        return -1;
     }
     if(argc == 4){
         if(mode == 't'){
